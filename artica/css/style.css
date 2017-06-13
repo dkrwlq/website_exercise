@@ -16,31 +16,25 @@
 
 .logo{
   float: left;
-  line-height: 101px;
+  margin-top:32px
 }
 
 .logo-link{
+  display:block;
   width: 122px;
   height: 30px;
   background: url(../images/logo_artica.gif) no-repeat;
   text-indent:-99999px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.wrap-btn-menu-toggle{
-  display: table-cell;
-  line-height: 101px;
-  float: right;
-  vertical-align: middle;
 }
 
 .btn-menu-toggle{
+  float: right;
   width: 26px;
   height: 23px;
   background: url(../images/btn_show_menu.gif) no-repeat;
   text-indent: -9999px;
   border:0;
+  margin-top: 39px;
 }
 
 .gnb{
@@ -50,10 +44,10 @@
 
   position:fixed;
   top:0;
-  right:0;
+  right:-340px;
   background: #161f32;
 
-  /*transform: translate(100%, 0);*/
+  /*transform: translate(100%, 0);    css3*/
 }
 
 .gnb-heading{
@@ -93,9 +87,166 @@
   cursor: pointer;
 }
 
+/* 공통(common) css */
+.contents{
+  text-align:center; /* 블럭요소인 박스에는 적용안됨 */
+  padding-top: 65px;
+  box-sizing: border-box;
+}
+
+.heading-section{
+  font-size: 30px;
+}
+
+.heading-section.logo-type{
+  font-family: Molle, cursive;
+  font-size: 52px;
+  color:#fff;
+  margin-bottom: 47px;
+}
+
+.heading-section.dark{
+  color:#3d506f;
+}
+
+.heading-section.white{
+  color:#fff;
+}
+
+.heading-section-sub{
+  font-size: 20px;
+  margin-top: 17px;
+}
+
+.heading-section-sub.white{
+  color:#fff;
+}
+
+.hr-line{
+  margin-top: 30px;
+  position:relative;
+}
+
+.hr-line.dark:before{
+  content:"";
+  display: block;
+  width: 571px;
+  height: 1px;
+  background:#7f90a5;
+  margin:0 auto 30px;
+}
+
+.hr-line.dark:after{
+  content: "";
+  display: block;
+
+  width: 23px;
+  height: 16px;
+  background: #fff url(../images/hr_line_circle_dark.png) no-repeat center; /*앞에가 가로방향 뒤에가 세로방향(가로세로 둘다 center)*/
+
+  position:absolute;
+  top: -8px;
+  left:50%;
+  margin-left:-12px;
+}
+
+.hr-line.white:before{
+  content:"";
+  display: block;
+  width: 571px;
+  height: 1px;
+  background:#fff;
+  margin:0 auto 30px; /* 위, 좌우, 아래 순서*/
+}
+
+.hr-line.white:after{
+  content: "";
+  display: block;
+
+  width: 23px;
+  height: 16px;
+  background: #222c40 url(../images/hr_line_circle_white.png) no-repeat center;
+
+  position:absolute;
+  top: -8px;
+  left:50%;
+  margin-left:-12px;
+}
+
+.paragraph{
+  line-height: 1.4; /* 줄간격을 폰트 크기의 1.4배 */
+}
+
+.paragraph.white{
+  color: #fff;
+}
+
+.paragraph.big{
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.btn-link{
+  display: block;
+  width:173px;
+  height: 53px;
+  box-sizing:border-box;
+  color:#fff;
+  line-height: 53px;
+}
+
+.btn-link.center{
+  margin:35px auto 0;
+}
+
+.btn-link.white{
+  border:1px solid #fff;
+}
+
+.btn-link.dark{
+  background: #3d506f;
+}
+
+/* 전용 css */
+.mt20{
+  margin-top: 20px;
+}
+
+.mt35{
+  margin-top: 35px;
+}
+
+.fc-white{
+  color:#fff;
+}
 
 
+/* 영역별 css */
+.section1{
+  background: #546279;
+  height: 700px;
+}
 
+.section1>.inner-section{ /*이런식의 태그는 좋지않은 방법 but.한단계 정도는 괜찮다.*/
+  background: #222c40;
+  height: 311px;
+  position: relative;
+  top: 105px;  /* margin-top 을 사용할경우 부모에게도 적용되기때문에 position:relative 을 사용해 자식의 top 을 띠어준다. */
+  padding-top: 43px; /* <h2 class="heading-section logo-type">Atica</h2> 의 여백을 주기위한거*/
+}
+
+.section3{
+  background: #1d263a;
+  height: 240px;
+}
+
+.section5{
+  background: #222c40;
+}
+
+.section8{
+  background: #161f32;
+}
 
 
 
