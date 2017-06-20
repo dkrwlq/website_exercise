@@ -297,6 +297,10 @@
   padding-bottom: 263px;
 }
 
+.section4{
+  position: relative;
+}
+
 .section8{
   background: #161f32;
 }
@@ -360,7 +364,7 @@
   margin-left:-18px;
 }
 
-.service-list-item:nth-child(2)>.item-heading:after{ /* :nth-child() 은 나란하게 이웃해있는 테그에 사용가능 따라서 나란하지 않은걸 하고 싶을때는 이웃관계인 부모들에게 사용해준다. */
+.service-list-item:nth-child(2)>.item-heading:after{
   width: 38px;
   height: 39px;
   background-position: -40px 0;
@@ -368,7 +372,7 @@
   margin-left:-19px;
 }
 
-.service-list-item:nth-child(3)>.item-heading:after{ /* :nth-child() 은 나란하게 이웃해있는 테그에 사용가능 따라서 나란하지 않은걸 하고 싶을때는 이웃관계인 부모들에게 사용해준다. */
+.service-list-item:nth-child(3)>.item-heading:after{
   width: 40px;
   height: 38px;
   background-position: -79px 0;
@@ -376,7 +380,7 @@
   margin-left:-20px;
 }
 
-.service-list-item:nth-child(4)>.item-heading:after{ /* :nth-child() 은 나란하게 이웃해있는 테그에 사용가능 따라서 나란하지 않은걸 하고 싶을때는 이웃관계인 부모들에게 사용해준다. */
+.service-list-item:nth-child(4)>.item-heading:after{
   width: 45px;
   height: 44px;
   background-position: -120px 0;
@@ -545,7 +549,8 @@
   margin-right: 11px;
 }
 
-.photo-list-item .btn-pop-close{
+.photo-list-item .btn-pop-close,
+.pofol-list-item .btn-pop-close{
   width: 12px;
   height: 12px;
   background:url(../images/btn_close_menu.png) no-repeat;
@@ -1060,7 +1065,13 @@
   font-size: 11px;
 }
 
-.detail{
+.pofol-list-item:nth-child(1) .detail,
+.pofol-list-item:nth-child(2) .detail,
+.pofol-list-item:nth-child(3) .detail,
+.pofol-list-item:nth-child(4) .detail,
+.pofol-list-item:nth-child(5) .detail,
+.pofol-list-item:nth-child(6) .detail,
+.pofol-list-item:nth-child(7) .detail{
   display: none;
 }
 
@@ -1071,6 +1082,13 @@
 .pofol-list-item{
   float: left;
   margin: 0 30px 30px 0;
+}
+
+.pofol-list-item:nth-child(1),
+.pofol-list-item:nth-child(2),
+.pofol-list-item:nth-child(3),
+.pofol-list-item:nth-child(4){
+  padding-bottom: 490px;
 }
 
 .pofol-list-item:nth-child(4n){
@@ -1123,31 +1141,123 @@
   font-weight: 300;
 }
 
+.detail{
+  width: 100%;
+  height: 470px;
+  position: absolute;
+  top: 646px;
+  left: 0;
+  background: #161f32;
+  z-index:90;
+  padding-top:25px;
+  box-sizing: border-box;
+}
 
+.detail:before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 16px solid #161f32;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+}
 
+.detail.num1:before{
+  margin-left:-464px
+}
 
+.detail.num2:before{
+  margin-left:-164px
+}
 
+.detail.num3:before{
+  margin-left:134px
+}
 
+.detail.num4:before{
+  margin-left:434px
+}
 
+.detail-photo-wrap{
+  width: 570px;
+  height: 420px;
+  overflow: hidden;
+  float: left;
+}
 
+.detail-photo.radio-big-image{
+  width: auto;
+  height: 100%;
+}
 
+.detail-photo.radio-small-image{
+  width: 100%;
+  height: auto;
+}
 
+.detail-text-wrap{
+  width: 570px;
+  height: 420px;
+  float: right;
+  color:#fff;
+  text-align: left;
+}
 
+.detail-text-heading{
+  font-size: 20px;
+  margin: 25px 0;
+}
 
+.detail-text-desc{
+  font-weight: 300;
+  line-height: 1.2;
+  border-bottom: 1px solid #fff;
+  padding-bottom:25px;
+  margin-bottom:25px;
+}
 
+.detail-date{
+  margin-bottom: 13px;
+}
 
+.detail-date:before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../images/icon_sprit.png) no-repeat 0 -121px;
+  margin-right: 9px;
+  position: relative; /* 주변 박스에 영향을 미치지 않으면서 약간의 위치조정이 필요할때 사용 */
+  top: 1px;
+}
 
+.detail-company{
+  margin-bottom: 13px;
+}
 
+.detail-company:before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/icon_sprit.png) no-repeat -15px -121px;
+  margin-right: 11px;
+}
 
+.detail-skill:before{
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url(../images/icon_sprit.png) no-repeat -29px -121px;
+  margin-right: 11px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.detail-link{
+  position:absolute;
+  bottom:25px;
+}
