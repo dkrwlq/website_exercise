@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>astro</title>
+  <title>contact us</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/contact_us.css" />
@@ -44,83 +44,79 @@
 
 <section class="contents section1">
   <div class="inner-box">
-    <h2 class="heading-section">CONTACT US</h2>
+    <h2 class="section1-heading">CONTACT US</h2>
     <p class="paragraph">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin.</p>
   </div>
 </section>
 
 <section class="contents section2">
-  <h3 class="heading-section">Office Info</h3>
-  <p class="paragraph">
+ <div class="inner-box">
+  <h3 class="section-heading">Office Info</h3>
+  <p class="h-line mb90">
     Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.
     <br>
     Donec sollicitudin molue in ipsum
   </p>
-
-  <ul>
-    <li>
-      <img src="">
-      <div><b>Address:</b></div>
-      <div>Some Street,20. NY</div>
-      <div>Some Street,40. LA</div>
+  <ul class="service-list">
+    <li class="service-list-item">
+      <div class="item-heading"><b>Address:</b></div>
+      <div class="item-paragraph no1">Some Street,20. NY</div>
+      <div class="item-paragraph">Some Street,40. LA</div>
     </li>
 
-    <li>
-      <img src="">
-      <div><b>Email:</b></div>
-      <div>yourmail@mail.com</div>
-      <div>yourmail@mail.com</div>
+    <li class="service-list-item">
+      <div class="item-heading"><b>Email:</b></div>
+      <div class="item-paragraph no1">yourmail@mail.com</div>
+      <div class="item-paragraph">yourmail@mail.com</div>
     </li>
 
-    <li>
-      <img src="">
-      <div><b>Phone</b></div>
-      <div>(00)11-234-567-89</div>
-      <div>11-234-567-890</div>
+    <li class="service-list-item">
+      <div class="item-heading"><b>Phone</b></div>
+      <div class="item-paragraph no1">(00)11-234-567-89</div>
+      <div class="item-paragraph">11-234-567-890</div>
     </li>
-
   </ul>
 
-</section>
-
-<section class="contents section3">
-  <h3>You Can Find Us Here</h3>
-  <p>
-    Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.
-    <br>
-    Donec sollicitudin molue in ipsum
+  <h3 class="section-heading">You Can Find Us Here</h3>
+  <p class="">
+   Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.
+   <br>
+   Donec sollicitudin molue in ipsum
   </p>
+
+ </div>
 </section>
 
-<section class="contents section3">
-  <h3>Send Mail to us</h3>
+<section class="contents ">
+  <div class="inner-box">
+    <h3 class="section-heading h-line">Send Mail to us</h3>
+    <div class="form-wrap">
 
-  <div>
+      <div class="input-wrap">
+        <div class="ask-box1 ">
+          <label for="name" class="name">Name</label><br>
+          <input type="text" id="name" placeholder="your name here" class="common-box">
+        </div>
 
-    <div>
-      <label for="name">Name</label><br>
-      <input type="text" id="name" placeholder="your name here">
+        <div class="ask-box2 ">
+          <label for="mail" class="mail">Email</label><br>
+          <input type="text" id="mail" placeholder="your mail here" class="common-box">
+        </div>
+      </div>
+
+      <div class="ask-box3">
+        <label for="message">Message</label><br>
+        <textarea placeholder="your message here" id="message" cols="100" rows="10" class="message-box"></textarea>
+      </div>
     </div>
 
-    <div>
-      <label for="mail">Email</label><br>
-      <input type="text" id="mail" placeholder="your mail here">
-    </div>
-
+    <input type="image" src="../images/send_message.png" class="mrt31">
   </div>
-
-  <div>
-    <label for="message">Message</label><br>
-    <textarea placeholder="your message here" id="message" cols="100" rows="10"></textarea>
-  </div>
-
-  <input type="submit" value="Send Message">
-
 </section>
 
 <footer class="footer">
   <div class="inner-box">
-    <div class="col">
+    <div class="col mrt31">
       <div class="list-heading">Menu</div>
       <ul class="list">
         <li class="list-item">HOME</li>
@@ -131,7 +127,7 @@
       </ul>
     </div>
 
-    <div class="col">
+    <div class="col mrt31">
       <div class="col-top">
         <div class="list-heading">We Offer</div>
         <ul class="list">
@@ -140,7 +136,7 @@
         </ul>
       </div>
 
-      <div class="col-bottom">
+      <div class="col-bottom mrt31">
         <div class="list-heading">Service</div>
         <ul class="list">
           <li class="list-item">FIRST SERVICE</li>
@@ -150,11 +146,11 @@
       </div>
     </div>
 
-    <div class="col">
+    <div class="col mrt31 read-more">
       <div class="list-heading">Our Blog</div>
       <div class="list-heading-sub">Lorem Ipsum sample text</div>
       <p class="footer-paragraph">
-        Vivamus suscipit tortor eget felis porttitorvolutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcuerat, accumsan.
+        Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur arcuerat, accumsan.
       </p>
       <a href="http://www.naver.com" class="footer-link">Read More</a>
     </div>
